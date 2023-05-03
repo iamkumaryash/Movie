@@ -27,6 +27,7 @@ public class MovieServiceImpl implements MovieService  {
         List<Movie> movieList = (List<Movie>) movieRepository.findAll();
         List<Movie> newMovieList = new ArrayList<>();
 
+        //loop to iterate over the movieList
         for(Movie element : movieList){
             if(element.getMovieGenre().equalsIgnoreCase("Action"))
             {
